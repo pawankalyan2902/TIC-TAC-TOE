@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles/ttt.css">
+    <link rel="stylesheet" href="styles/overlay.css">
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/winning.css">
+    <link rel="stylesheet" href="styles/board_game.css">
+    <script src="all_query_selctors.js" defer></script>
+    <script src="overlays.js" defer></script>
+    <script src="styles/board_game.js" defer></script>
+    <link rel="stylesheet" href="styles/mediaquaries.css">
+</head>
+
+<body>
+    <div id="backdrop" class="backdrop"></div>
+    <aside id="overlayaside" class="overlayaside">
+        <form action="action" id="overlay">
+            <h2>Choose your name</h2>
+            <div id="user">
+                <label for="user_name"><strong>Player name</strong></label>
+                <input type="text" id="user_name" name="player_name">
+            </div>
+            <span id="alert"></span>
+            <div id="btnnn">
+                <a href="#" id="cancel_a">Cancel</a>
+                <button id="confirm_a" type="submit" style="display: block;">Confirm<button>
+            </div>
+        </form>
+    </aside>
+
+
+    <header>
+        <ul id="header_part">
+            <li>
+                <h3>Play Tic Tac Toe</h3>
+            </li>
+            <li>
+                <h6>Built with Html,Css,Java script-of course-with lots of love</h6>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section id="contents">
+            <ul id="article_elements">
+                <li>
+                    <h3>Player 1</h3>
+                </li>
+                <li>
+                    <h1 id="player_name1"><strong>PLAYER NAME 1</strong></h1>
+                </li>
+                <li>
+                    <h2>X</h2>
+                </li>
+                <li><button class="button_of_edit" data-player="1">Edit</button></li>
+            </ul>
+            <ul id="article_elements">
+                <li>
+                    <h3>Player 2</h3>
+                </li>
+                <li>
+                    <h1 id="player_name2"><Strong>PLAYER NAME 2</Strong></h1>
+                </li>
+                <li>
+                    <h2>O</h2>
+                <li><button class="button_of_edit" data-player="2">Edit</button></li>
+                <!--link still not give -->
+            </ul>
+        </section>
+        <section id="display">
+            <aside id="winning_text">
+                <h1 id="winner_name_display"><span id="name"></span></h1>
+                <p>Click "Start New Game"above,to start a new game!</p>
+            </aside>
+            <p id="btn"><a href="#" onclick="boarddisplay()">Start New Game</a></p>
+
+        </section>
+        <section id="board_game">
+            <p id="switching_content">Its your turn <strong id="names">PLAYER NAME</strong>!</p>
+            <div id="js_display">
+                <ol id="display_of_game">
+                    <div id="board_elements">
+                        <li data-position_info_of_box="1" data-row="0" data-col="0"><span class="input_element"></span>
+                        </li>
+                        <li data-position_info_of_box="2" data-row="0" data-col="1"><span class="input_element"></span>
+                        </li>
+                        <li data-position_info_of_box="3" data-row="0" data-col="2"><span class="input_element"></span>
+                        </li>
+                    </div>
+                    <div id="board_elements">
+                        <li data-position_info_of_box="4" data-row="1" data-col="0"><span class="input_element"></span>
+                        </li>
+                        <li data-position_info_of_box="5" data-row="1" data-col="1"><span class="input_element"></span>
+                        </li>
+                        <li data-position_info_of_box="6" data-row="1" data-col="2"><span class="input_element"></span>
+                        </li>
+                    </div>
+                    <div id="board_elements">
+                        <li data-position_info_of_box="7" data-row="2" data-col="0"><span class="input_element"></span>
+                        </li>
+                        <li data-position_info_of_box="8" data-row="2" data-col="1"><span class="input_element"></span>
+                        </li>
+                        <li data-position_info_of_box="9" data-row="2" data-col="2"><span class="input_element"></span>
+                        </li>
+                    </div>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

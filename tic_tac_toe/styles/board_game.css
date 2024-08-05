@@ -1,0 +1,49 @@
+ ol#display_of_game {
+     display: flex;
+     flex-direction: row;
+     width: 40%;
+     margin: auto;
+     padding-left: 0px;
+     justify-content: center;
+ }
+
+
+ #board_elements li {
+
+     background-color: rgb(243, 227, 255);
+     /* padding: 50px 60px; */
+     margin: 5px;
+     height: 6rem;
+     width: 6rem;
+ }
+
+ #js_display {
+     display: none;
+ }
+
+ span.input_element {
+     position: relative;
+     top: 14px;
+     left: 35px;
+     font-size: 50px;
+     color: aliceblue;
+ }
+
+ #board_elements li:hover {
+     background-color: rgb(112, 13, 214);
+ }
+
+ /* javascriptboard */
+ .boarddisplay {
+     display: block;
+ }
+
+ .background_color {
+     background-color: rgb(112, 13, 214);
+
+ }
+ h1#winner_name_display
+ {
+    font-size: 3rem;
+ }
+

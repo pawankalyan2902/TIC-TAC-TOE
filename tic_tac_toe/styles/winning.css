@@ -1,0 +1,18 @@
+#winning_text
+{
+    text-align: center;
+    background-color: rgb(50, 5, 87);
+    color: white;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+    display: none;
+}
+p#switching_content
+{
+    text-align: center;
+}
+#names
+{
+    color: rgb(112, 13, 204);;
+}

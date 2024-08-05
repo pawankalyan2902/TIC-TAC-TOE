@@ -1,0 +1,131 @@
+#overlay {
+    position: fixed;
+    background-color: aliceblue;
+    top: 35%;
+    left: 34%;
+    padding: 1.25rem 6.875rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.16rem 0.16rem 0.16rem black;
+    display: flex;
+    flex-direction: column;
+    width: 20.381875rem;
+    height: 13.7583125rem;
+}
+
+@media(max-height:36.4375rem) {
+    #overlay {
+        left: 25%;
+    }
+}
+
+
+#backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#user {
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#overlay div a {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+#btnnn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+#btnnn button {
+    display: none;
+}
+
+#confirm_a {
+    color: white;
+    background-color: rgb(140, 0, 255);
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    border: transparent;
+    display: block;
+    margin-left: 0.3rem;
+}
+
+#confirm_a:hover {
+    background-color: rgb(79, 10, 190);
+}
+
+#cancel_a {
+    color: rgb(140, 0, 255);
+    padding: 0.3rem;
+
+}
+
+#overlay h2 {
+    text-align: center;
+}
+
+#cancel_a:hover {
+    background-color: rgb(230, 201, 252);
+    border-radius: 0.25rem;
+}
+
+#user_name {
+    width: 13rem;
+    padding-left: 0.15rem;
+    margin-left: 0.3rem;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+#overlayaside {
+    display: none;
+}
+
+#backdrop {
+    display: none;
+}
+
+#alert {
+    margin-top: 0.6rem;
+    text-align: center;
+
+}
+
+/* javascript css code */
+.js_overlay {
+    display: block;
+}
+
+.js_backdrop {
+    display: block;
+}
+
+.user_name {
+    color: rgb(136, 2, 2);
+}
+
+.js_input {
+    color: rgb(136, 2, 2);
+    background-color: rgb(253, 219, 219);
+    border-color: rgb(136, 2, 2);
+}
+
+
+
+
